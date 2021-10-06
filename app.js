@@ -8,6 +8,7 @@ const app = express();
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
+app.use(express.static("./style"));
 app.use(routes);
 
 app.listen(3000, () => {

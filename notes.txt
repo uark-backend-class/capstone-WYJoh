@@ -3,3 +3,4 @@ npm init -y
 npm i express
 npm i express-handlebars
 npm i mongoose
+npm i -g sass
