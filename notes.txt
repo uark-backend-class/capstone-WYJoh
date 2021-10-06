@@ -4,3 +4,6 @@ npm i express
 npm i express-handlebars
 npm i mongoose
 npm i -g sass
+
+PROCESS
+personal image - https://stackoverflow.com/questions/22775892/how-to-
