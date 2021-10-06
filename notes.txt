@@ -1,0 +1,5 @@
+INSTALL
+npm init -y
+npm i express
+npm i express-handlebars
+npm i mongoose
