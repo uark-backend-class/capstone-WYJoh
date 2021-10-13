@@ -1,7 +1,7 @@
 const express = require('express');
 const routes = require('./routes');
 const exphbs = require('express-handlebars');
-require('./db');
+// require('./db');
 
 const app = express();
 

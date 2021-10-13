@@ -1,8 +1,7 @@
-
-const mongoose = require('mongoose');
+/*const mongoose = require('mongoose');
 
 mongoose.connect("mongodb://localhost/results");
 
-mongoose.connection.once('open', () => {
+mongoose.connection.on('open', () => {
     console.log("Connected to mongodb");
-});
+});*/

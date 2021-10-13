@@ -4,9 +4,13 @@
     <h2>SELECT YOUR TEAMS</h2>
 </div>
 
-<!-- RESULTS BUTTON -->
 <div class="buttonCenter">
-    <a href="/results">
-        <button class="buttonStyle"><strong>TEAM RESULTS</strong></button>
-    </a>
+    <form action="/viewTeams" method="GET">
+        Team 1: <input type="text" name="team1" />
+        Team 2: <input type="text" name="team2" />
+        <br />
+            <a href="/results">
+                <button class="buttonStyle"><strong>TEAM RESULTS</strong></button>
+            </a>
+    </form>
 </div>
