@@ -29,7 +29,16 @@ h1, h2 {
     margin-top: 30px;
 }
 
-/* BUTTONS */
+/* FORM */
+form {
+    font-family: 'Press Start 2P', cursive;
+}
+input {
+    background-color: transparent;
+    font-family: 'Press Start 2P', cursive;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 .buttonCenter {
     text-align: center;
     margin-top: 100px;

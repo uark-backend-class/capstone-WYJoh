@@ -3,5 +3,5 @@ exports.listTeamsPage = (req, res) => {
 };
 
 exports.resultsPage = (req, res) => {
-    res.render('results-page');
+    res.render('results-page', { title: "Team Results" });
 };
