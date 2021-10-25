@@ -14,24 +14,109 @@ h1 {
     color: #1DB80E;
     font-family: 'Press Start 2P', cursive;
     font-size: 40px;
+    text-align: center;
     margin: 25px;
 }
-h2 {
-    color: white;
-    font-family: 'Work Sans', sans-serif;
-    /*font-style: italic;*/
-    letter-spacing: 4px;
+.h1Results {
+    color: #F15614;
+    text-decoration: underline;
 }
-h1, h2 {
+.h2Root {
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 4px;
+    color: white;
     text-align: center;
 }
-.textMargin {
+.h2Results {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    text-align: center;
     margin-top: 30px;
+}
+.h3Results {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+.winTotal {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+.tieTotal {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    text-align: center;
+}
+.fa-caret-down {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.h6Results {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.h7Results {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+.h8Results {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+/* TEXT FORMAT */
+.textMarginFull {
+    margin-top: 30px;
+}
+.textMarginHalf {
+    margin-top: 15px;
+}
+.textCenter {
+    text-align: center;
+}
+
+/* ICON */
+.returnIcon {
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+}
+.returnIcon:hover {
+    animation: spinReturn 2s 1;
+}
+@keyframes spinReturn {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+.returnText {
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+    left: 60px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: white;
 }
 
 /* FORM */
 form {
     font-family: 'Press Start 2P', cursive;
+    max-width: 800px !important;
+    display: inline-block;
 }
 input {
     background-color: transparent;
@@ -57,4 +142,29 @@ input {
 .buttonStyle:hover {
     background-color: #F15614;
     color: #84C2EB;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 800px !important;
+}
+.containerBox {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 30px;
+    max-width: 600px !important;
+}
+.containerBox:hover .containerHover:hover .containerHoverInner,
+.containerBox .containerHoverInner {
+    height: 0;
+    overflow: hidden;
+    transition: height .3s;
+    transition-delay: 10000s;
+}
+.containerHoverInner,
+.containerBox:hover .containerHoverInner {
+    height: 275px;
+    transition: .3s;
 }

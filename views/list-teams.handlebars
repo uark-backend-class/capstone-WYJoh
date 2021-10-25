@@ -1,16 +1,24 @@
-<div class="textMargin">
-    <h2>COLLEGE FOOTBALL</h2>
+<div class="textMarginFull">
+    <h2 class="h2Root"><strong>COLLEGE FOOTBALL</strong></h2>
     <h1>{{ title }}</h1>
-    <h2>SELECT YOUR TEAMS</h2>
+    <h2 class="h2Root"><strong>SELECT YOUR TEAMS</strong></h2>
 </div>
 
 <div class="buttonCenter">
-    <form action="/viewTeams" method="GET">
-        Team 1:<input type="text" name="team1" autocomplete="off" />
-        Team 2:<input type="text" name="team2" autocomplete="off" />
+    <form action="/results" method="GET">
+        <div class="row">
+            <div class="col-6">
+                Team 1
+                <br />
+                <input type="text" name="team1" autocomplete="off" />
+            </div>
+            <div class="col-6">
+                Team 2
+                <br />
+                <input type="text" name="team2" autocomplete="off" />
+            </div>
+        </div>
         <br />
-            <a href="/results">
-                <button class="buttonStyle"><strong>TEAM RESULTS</strong></button>
-            </a>
+        <button type="submit" class="buttonStyle"><strong>TEAM RESULTS</strong></button>
     </form>
 </div>

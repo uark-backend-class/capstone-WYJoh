@@ -5,6 +5,12 @@ npm i express-handlebars
 npm i mongoose
 npm i -g sass
 npm i bootstrap@3
+npm i axios
+npm install --save @fortawesome/fontawesome-free
 
 PROCESS
 personal image - https://stackoverflow.com/questions/22775892/how-to-
+
+TO-DO (COMMAND LINE)
+npm i -g heroku
+heroku create
