@@ -6,10 +6,10 @@ const matchupKey = process.env.MATCHUP_API;
 exports.listTeamsPage = (req, res) => {
     res.render('list-teams', { title: "Head-to-Head" });
 };
-
+// "texas%20a%26m"
 exports.resultsPage = async (req, res) => {
-    let team1 = req.query.team1;
-    let team2 = req.query.team2;
+    let team1 = encodeURIComponent(req.query.team1);
+    let team2 = encodeURIComponent(req.query.team2);
 
     const config = {
         headers: { Authorization: `Bearer ${matchupKey}` },
@@ -25,7 +25,7 @@ exports.resultsPage = async (req, res) => {
         let team1Wins = results.data.team1Wins;
         let team2Wins = results.data.team2Wins;
         let ties = results.data.ties;
-        
+
         // FIRST GAME (MOST RECENT)
         let gameFirst = results.data.games.slice(-1);
 
@@ -125,10 +125,11 @@ exports.resultsPage = async (req, res) => {
             lowerFourth,
             lowerFifth,
         });
+
     } catch (error) {
         res.render('error-page', {
             errorHead: "Error",
-            errorMessageAbove: "you may have a spelling error",
+            errorMessageAbove: "you may have a spelling mistake",
             errorConj: "-- or --",
             errorMessageBelow: "these schools have never played before",
         });
