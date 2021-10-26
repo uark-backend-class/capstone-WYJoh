@@ -126,16 +126,11 @@ exports.resultsPage = async (req, res) => {
             lowerFifth,
         });
     } catch (error) {
-        let errorHead = "Error";
-        let errorMessageAbove = "you may have a spelling error";
-        let errorConj = "-- or --";
-        let errorMessageBelow = "these schools have never played before";
-
         res.render('error-page', {
-            errorHead,
-            errorMessageAbove,
-            errorConj,
-            errorMessageBelow,
+            errorHead: "Error",
+            errorMessageAbove: "you may have a spelling error",
+            errorConj: "-- or --",
+            errorMessageBelow: "these schools have never played before",
         });
     }
 };
