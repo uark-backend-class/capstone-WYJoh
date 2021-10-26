@@ -21,6 +21,28 @@ h1 {
     color: #F15614;
     text-decoration: underline;
 }
+.h1Error {
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 500px;
+}
+.spanErrorHead {
+    color: #F15614;
+}
+.spanErrorConj {
+    color: #1DB80E;
+}
 .h2Root {
     font-family: 'Work Sans', sans-serif;
     letter-spacing: 4px;
