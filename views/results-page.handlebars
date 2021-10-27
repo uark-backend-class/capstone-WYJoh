@@ -52,63 +52,17 @@
 
     <!-- FIRST GAME (MOST RECENT) -->
     <div class="containerHoverInner">
-        <div class="row">
-            <div class="col-12 textCenter textMarginHalf">
-                <h7 class="h7Results">{{ higherFirst }} - {{ lowerFirst }} ({{ winnerFirst }})</h7>
+        {{#each games}}
+            <div class="row">
+                <div class="col-12 textCenter textMarginHalf">
+                    <h7 class="h7Results">{{ higher }} - {{ this.lower }} ({{ this.winner }})</h7>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 textCenter">
-                <h8 class="h8Results">({{ seasonFirst }})</h8>
+            <div class="row">
+                <div class="col-12 textCenter">
+                    <h8 class="h8Results">({{ this.season }})</h8>
+                </div>
             </div>
-        </div>
-
-        <!-- SECOND GAME -->
-        <div class="row">
-            <div class="col-12 textCenter textMarginHalf">
-                <h7 class="h7Results">{{ higherSecond }} - {{ lowerSecond }} ({{ winnerSecond }})</h7>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 textCenter">
-                <h8 class="h8Results">({{ seasonSecond }})</h8>
-            </div>
-        </div>
-
-        <!-- THIRD GAME -->
-        <div class="row">
-            <div class="col-12 textCenter textMarginHalf">
-                <h7 class="h7Results">{{ higherThird }} - {{ lowerThird }} ({{ winnerThird }})</h7>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 textCenter">
-                <h8 class="h8Results">({{ seasonThird }})</h8>
-            </div>
-        </div>
-
-        <!-- FOURTH GAME -->
-        <div class="row">
-            <div class="col-12 textCenter textMarginHalf">
-                <h7 class="h7Results">{{ higherFourth }} - {{ lowerFourth }} ({{ winnerFourth }})</h7>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 textCenter">
-                <h8 class="h8Results">({{ seasonFourth }})</h8>
-            </div>
-        </div>
-
-        <!-- FIFTH GAME (OLDEST) -->
-        <div class="row">
-            <div class="col-12 textCenter textMarginHalf">
-                <h7 class="h7Results">{{ higherFifth }} - {{ lowerFifth }} ({{ winnerFifth }})</h7>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 textCenter">
-                <h8 class="h8Results">({{ seasonFifth }})</h8>
-            </div>
-        </div>
+        {{/each}}
     </div>
 </div>
