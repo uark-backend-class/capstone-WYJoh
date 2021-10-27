@@ -1,5 +1,4 @@
 const axios = require('axios');
-// const Team = require("../models/Team");
 
 const matchupKey = process.env.MATCHUP_API;
 
