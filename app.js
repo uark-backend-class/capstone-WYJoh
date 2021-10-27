@@ -14,6 +14,6 @@ app.set("view engine", "handlebars");
 app.use(express.static("./style"));
 app.use(routes);
 
-app.listen(3000, () => {
-    console.log("Now listening on port 3000");
+app.listen(process.env.PORT, () => {
+    console.log("now listening on port");
 });
